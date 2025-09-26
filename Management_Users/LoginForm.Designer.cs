@@ -37,6 +37,7 @@ partial class LoginForm
         button1 = new System.Windows.Forms.Button();
         linkLabel1 = new System.Windows.Forms.LinkLabel();
         checkBox1 = new System.Windows.Forms.CheckBox();
+        messageError = new System.Windows.Forms.Label();
         SuspendLayout();
         // 
         // label1
@@ -111,11 +112,21 @@ partial class LoginForm
         checkBox1.Text = "Termos de uso e privacidade";
         checkBox1.UseVisualStyleBackColor = true;
         // 
+        // messageError
+        // 
+        messageError.ForeColor = System.Drawing.Color.IndianRed;
+        messageError.Location = new System.Drawing.Point(177, 289);
+        messageError.Name = "messageError";
+        messageError.Size = new System.Drawing.Size(201, 41);
+        messageError.TabIndex = 8;
+        messageError.Text = "Erro no Login";
+        // 
         // LoginForm
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(697, 450);
+        Controls.Add(messageError);
         Controls.Add(checkBox1);
         Controls.Add(linkLabel1);
         Controls.Add(button1);
@@ -129,6 +140,8 @@ partial class LoginForm
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.Label messageError;
 
     private System.Windows.Forms.Label label3;
     private System.Windows.Forms.TextBox textBox2;
