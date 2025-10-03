@@ -82,9 +82,11 @@ partial class LoginForm
         textBox2.Name = "textBox2";
         textBox2.Size = new System.Drawing.Size(371, 23);
         textBox2.TabIndex = 3;
+        textBox2.UseSystemPasswordChar = true;
         // 
         // button1
         // 
+        button1.Cursor = System.Windows.Forms.Cursors.Hand;
         button1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
         button1.Location = new System.Drawing.Point(277, 333);
         button1.Name = "button1";
@@ -101,7 +103,8 @@ partial class LoginForm
         linkLabel1.Size = new System.Drawing.Size(101, 23);
         linkLabel1.TabIndex = 6;
         linkLabel1.TabStop = true;
-        linkLabel1.Text = "Recuperar Senha";
+        linkLabel1.Text = "Criar conta";
+        linkLabel1.LinkClicked += linkLabel1_LinkClicked;
         // 
         // checkBox1
         // 

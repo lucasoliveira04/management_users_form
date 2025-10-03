@@ -31,96 +31,86 @@ partial class HomeUser
     /// </summary>
     private void InitializeComponent()
     {
-        label_nome = new System.Windows.Forms.Label();
-        label_dateBirth = new System.Windows.Forms.Label();
-        button_enviar = new System.Windows.Forms.Button();
-        label_sexo = new System.Windows.Forms.Label();
-        input_name = new System.Windows.Forms.TextBox();
-        input_data_nascimento = new System.Windows.Forms.TextBox();
-        input_sexo = new System.Windows.Forms.TextBox();
+        label_name_user = new System.Windows.Forms.Label();
+        button = new System.Windows.Forms.Button();
+        label_points = new System.Windows.Forms.Label();
+        label_level = new System.Windows.Forms.Label();
+        label_saldo = new System.Windows.Forms.Label();
         SuspendLayout();
         // 
-        // label_nome
+        // label_name_user
         // 
-        label_nome.Location = new System.Drawing.Point(63, 75);
-        label_nome.Name = "label_nome";
-        label_nome.Size = new System.Drawing.Size(100, 23);
-        label_nome.TabIndex = 0;
-        label_nome.Text = "Nome";
+        label_name_user.Font = new System.Drawing.Font("Segoe UI", 22F);
+        label_name_user.Location = new System.Drawing.Point(27, 50);
+        label_name_user.Name = "label_name_user";
+        label_name_user.Size = new System.Drawing.Size(285, 75);
+        label_name_user.TabIndex = 0;
+        label_name_user.Text = "{{name}}";
+        label_name_user.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
-        // label_dateBirth
+        // button
         // 
-        label_dateBirth.Location = new System.Drawing.Point(63, 122);
-        label_dateBirth.Name = "label_dateBirth";
-        label_dateBirth.Size = new System.Drawing.Size(158, 23);
-        label_dateBirth.TabIndex = 1;
-        label_dateBirth.Text = "Data de nascimento";
+        button.Location = new System.Drawing.Point(644, 12);
+        button.Name = "button";
+        button.Size = new System.Drawing.Size(75, 23);
+        button.TabIndex = 1;
+        button.Text = "Sair";
+        button.UseVisualStyleBackColor = true;
+        button.Click += button_Click;
         // 
-        // button_enviar
+        // label_points
         // 
-        button_enviar.Location = new System.Drawing.Point(63, 309);
-        button_enviar.Name = "button_enviar";
-        button_enviar.Size = new System.Drawing.Size(109, 46);
-        button_enviar.TabIndex = 4;
-        button_enviar.Text = "Enviar";
-        button_enviar.UseVisualStyleBackColor = true;
-        button_enviar.Click += button_enviar_Click;
+        label_points.Font = new System.Drawing.Font("Segoe UI", 13F);
+        label_points.Location = new System.Drawing.Point(118, 4);
+        label_points.Name = "label_points";
+        label_points.Size = new System.Drawing.Size(194, 28);
+        label_points.TabIndex = 2;
+        label_points.Text = "{{points}}";
+        label_points.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
-        // label_sexo
+        // label_level
         // 
-        label_sexo.Location = new System.Drawing.Point(63, 172);
-        label_sexo.Name = "label_sexo";
-        label_sexo.Size = new System.Drawing.Size(100, 23);
-        label_sexo.TabIndex = 5;
-        label_sexo.Text = "Sexo";
+        label_level.Location = new System.Drawing.Point(12, 9);
+        label_level.Name = "label_level";
+        label_level.Size = new System.Drawing.Size(100, 23);
+        label_level.TabIndex = 3;
+        label_level.Text = "{{level}}";
         // 
-        // input_name
+        // label_saldo
         // 
-        input_name.Location = new System.Drawing.Point(129, 71);
-        input_name.Name = "input_name";
-        input_name.Size = new System.Drawing.Size(154, 27);
-        input_name.TabIndex = 6;
-        // 
-        // input_data_nascimento
-        // 
-        input_data_nascimento.Location = new System.Drawing.Point(227, 122);
-        input_data_nascimento.Name = "input_data_nascimento";
-        input_data_nascimento.Size = new System.Drawing.Size(146, 27);
-        input_data_nascimento.TabIndex = 7;
-        // 
-        // input_sexo
-        // 
-        input_sexo.Location = new System.Drawing.Point(121, 168);
-        input_sexo.Name = "input_sexo";
-        input_sexo.Size = new System.Drawing.Size(162, 27);
-        input_sexo.TabIndex = 8;
+        label_saldo.Font = new System.Drawing.Font("Segoe UI", 24F);
+        label_saldo.Location = new System.Drawing.Point(470, 87);
+        label_saldo.Name = "label_saldo";
+        label_saldo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+        label_saldo.Size = new System.Drawing.Size(205, 63);
+        label_saldo.TabIndex = 4;
+        label_saldo.Text = "{{saldo}}";
+        label_saldo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         // 
         // HomeUser
         // 
-        AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(800, 450);
-        Controls.Add(input_sexo);
-        Controls.Add(input_data_nascimento);
-        Controls.Add(input_name);
-        Controls.Add(label_sexo);
-        Controls.Add(button_enviar);
-        Controls.Add(label_dateBirth);
-        Controls.Add(label_nome);
+        ClientSize = new System.Drawing.Size(800, 382);
+        Controls.Add(label_saldo);
+        Controls.Add(label_level);
+        Controls.Add(label_points);
+        Controls.Add(button);
+        Controls.Add(label_name_user);
+        Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
         Text = "HomeUser";
         ResumeLayout(false);
-        PerformLayout();
     }
 
-    private System.Windows.Forms.Button button_enviar;
-    private System.Windows.Forms.TextBox input_name;
-    private System.Windows.Forms.TextBox input_data_nascimento;
-    private System.Windows.Forms.TextBox input_sexo;
+    private System.Windows.Forms.Label label_saldo;
 
-    private System.Windows.Forms.Label label_sexo;
+    private System.Windows.Forms.Label label_level;
 
-    private System.Windows.Forms.Label label_nome;
-    private System.Windows.Forms.Label label_dateBirth;
+    private System.Windows.Forms.Label label_points;
+
+    private System.Windows.Forms.Button button;
+
+    private System.Windows.Forms.Label label_name_user;
 
     #endregion
 }

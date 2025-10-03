@@ -1,35 +1,23 @@
-﻿namespace Management_Users;
+﻿using Management_Users.entity;
+
+namespace Management_Users;
 
 public partial class HomeUser : Form
 {
-    public HomeUser()
+    private readonly UserEntity _user;
+    public HomeUser(UserEntity user)
     {
         InitializeComponent();
-    }
-
-    private void label2_Click(object sender, EventArgs e)
-    {
-        throw new System.NotImplementedException();
-    }
-
-
-    private void button_enviar_Click(object sender, EventArgs e)
-    {
-        string name = input_name.Text;
-        string sexo = input_sexo.Text;
-        string data_nascimento = input_data_nascimento.Text;
-
-        string nomeArquivo = "teste.txt";
+        _user = user;
         
-        string mensagem_save = name + " - " +  sexo + " - " + data_nascimento;
+        label_name_user.Text = _user.Username;
+        label_points.Text = _user.Pontos + " Pontos";
+        label_level.Text = _user.Level + " Level";
+        label_saldo.Text = _user.Saldo + " R$";
+    }
 
-        string caminho = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", nomeArquivo);
-
-        using (StreamWriter writer = new StreamWriter(caminho))
-        {
-            writer.WriteLine(mensagem_save);
-        }
-
-        Console.WriteLine($"Arquivo '{nomeArquivo}' criado na raiz do projeto.");
+    private void button_Click(object sender, EventArgs e)
+    {
+        FormNavigator.Navigate(this, new LoginForm());
     }
 }

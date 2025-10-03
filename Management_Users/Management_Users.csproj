@@ -12,6 +12,9 @@
       <Compile Update="HomeUser.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="RegisterUser.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
