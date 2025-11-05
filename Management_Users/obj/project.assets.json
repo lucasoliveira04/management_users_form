@@ -8,19 +8,19 @@
     "net9.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Lucas Trabalho\\.nuget\\packages\\": {}
+    "C:\\Users\\LucasOliveira\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas Trabalho\\OneDrive - smit.net.br\\Documentos\\Github\\management_users_form\\Management_Users\\Management_Users.csproj",
+      "projectUniqueName": "C:\\Users\\LucasOliveira\\Documents\\Github\\management_users_form\\Management_Users\\Management_Users.csproj",
       "projectName": "Management_Users",
-      "projectPath": "C:\\Users\\Lucas Trabalho\\OneDrive - smit.net.br\\Documentos\\Github\\management_users_form\\Management_Users\\Management_Users.csproj",
-      "packagesPath": "C:\\Users\\Lucas Trabalho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucas Trabalho\\OneDrive - smit.net.br\\Documentos\\Github\\management_users_form\\Management_Users\\obj\\",
+      "projectPath": "C:\\Users\\LucasOliveira\\Documents\\Github\\management_users_form\\Management_Users\\Management_Users.csproj",
+      "packagesPath": "C:\\Users\\LucasOliveira\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LucasOliveira\\Documents\\Github\\management_users_form\\Management_Users\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lucas Trabalho\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\LucasOliveira\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0-windows"
@@ -42,9 +42,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
+        "auditMode": "all"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0-windows7.0": {
@@ -68,7 +68,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Lucas Trabalho\\.dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\LucasOliveira\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
