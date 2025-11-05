@@ -7,6 +7,7 @@ namespace Management_Users.repositories
     {
         void Add(UserEntity user);
         UserEntity? GetByEmail(string email);
+        UserEntity? GetByPassword(string password);
         IEnumerable<UserEntity> GetAll();
         void Delete(int id);
     }

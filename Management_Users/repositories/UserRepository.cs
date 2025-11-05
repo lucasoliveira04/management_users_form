@@ -7,13 +7,13 @@ namespace Management_Users.repositories
 {
     public class UserRepository : IUserRepository
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext _context = new();
 
-        public UserRepository()
+        public bool IsAuthenticated(string email, string password)
         {
-            _context = new AppDbContext();
+            var user = _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+            return user != null;
         }
-
         public void Add(UserEntity user)
         {
             _context.Users.Add(user);
@@ -23,6 +23,11 @@ namespace Management_Users.repositories
         public UserEntity? GetByEmail(string email)
         {
             return _context.Users.FirstOrDefault(u => u.Email == email);
+        }
+
+        public UserEntity? GetByPassword(string password)
+        {
+            return _context.Users.FirstOrDefault(u => u.Password == password);
         }
 
         public IEnumerable<UserEntity> GetAll()

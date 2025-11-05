@@ -29,4 +29,9 @@ public partial class Home : Form
     {
         new Register().ShowDialog();
     }
+    
+    private void button2_Click(object sender, EventArgs e)
+    {
+        new Login().ShowDialog();
+    }
 }

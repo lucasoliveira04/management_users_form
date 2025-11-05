@@ -168,3 +168,4 @@ C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\b
 C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\bin\Debug\net9.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\bin\Debug\net9.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\obj\Debug\net9.0-windows\Manageme.489E423E.Up2Date
+C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\obj\Debug\net9.0-windows\Management_Users.pages.Login.resources

@@ -15,6 +15,9 @@
       <Compile Update="pages\Register.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="pages\Login.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>

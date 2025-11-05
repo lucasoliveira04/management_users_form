@@ -62,6 +62,7 @@ partial class Home
         panel1.Name = "panel1";
         panel1.Size = new System.Drawing.Size(832, 61);
         panel1.TabIndex = 0;
+        
         // 
         // button3
         // 
@@ -100,6 +101,7 @@ partial class Home
         button2.TabIndex = 1;
         button2.Text = "button2";
         button2.UseVisualStyleBackColor = true;
+        button2.Click += button2_Click;
         // 
         // panel2
         // 
