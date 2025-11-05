@@ -1,16 +1,25 @@
-namespace Management_Users;
+using System;
+using Management_Users.pages;
+using Management_Users.repositories;
 
-static class Program
+namespace Management_Users
 {
-    /// <summary>
-    ///  The main entry point for the application.
-    /// </summary>
-    [STAThread]
-    static void Main()
+    static class Program
     {
-        // To customize application configuration such as set high DPI settings or default font,
-        // see https://aka.ms/applicationconfiguration.
-        ApplicationConfiguration.Initialize();
-        Application.Run();
+        [STAThread]
+        static void Main()
+        {
+            ApplicationConfiguration.Initialize();
+
+            var userRepository = new UserRepository();
+            var users = userRepository.GetAll();
+
+            foreach (var user in users)
+            {
+                Console.WriteLine($"ID: {user.Id}, Nome: {user.Nome}, Email: {user.Email}, Horario de Criação: {user.CreatedAt}");
+            }
+            
+            Application.Run(new Home());
+        }
     }
 }
