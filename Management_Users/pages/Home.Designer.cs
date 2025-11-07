@@ -32,7 +32,6 @@ partial class Home
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
         panel1 = new System.Windows.Forms.Panel();
         button3 = new System.Windows.Forms.Button();
         button1 = new System.Windows.Forms.Button();
@@ -94,6 +93,7 @@ partial class Home
         titleHomeLabel.Size = new System.Drawing.Size(344, 61);
         titleHomeLabel.TabIndex = 1;
         titleHomeLabel.Text = "You ERP";
+        titleHomeLabel.Click += titleHomeLabel_Click;
         // 
         // button2
         // 
@@ -118,7 +118,6 @@ partial class Home
         // 
         // pictureBox2
         // 
-        pictureBox2.Image = ((System.Drawing.Image)resources.GetObject("pictureBox2.Image"));
         pictureBox2.Location = new System.Drawing.Point(624, 11);
         pictureBox2.Name = "pictureBox2";
         pictureBox2.Size = new System.Drawing.Size(26, 27);
@@ -129,7 +128,6 @@ partial class Home
         // 
         // pictureBox1
         // 
-        pictureBox1.Image = ((System.Drawing.Image)resources.GetObject("pictureBox1.Image"));
         pictureBox1.Location = new System.Drawing.Point(592, 11);
         pictureBox1.Name = "pictureBox1";
         pictureBox1.Size = new System.Drawing.Size(26, 27);

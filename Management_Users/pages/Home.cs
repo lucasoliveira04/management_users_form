@@ -53,15 +53,23 @@ public partial class Home : Form
     private void button1_Click(object sender, EventArgs e)
     {
         new Register().ShowDialog();
+        this.Hide();
     }
     
     private void button2_Click(object sender, EventArgs e)
     {
         new Login().ShowDialog();
+        this.Hide();
     }
     
     private void button3_Click(object sender, EventArgs e)
     {
         new Login().ShowDialog();
+        this.Hide();
+    }
+
+    private void titleHomeLabel_Click(object sender, EventArgs e)
+    {
+        
     }
 }

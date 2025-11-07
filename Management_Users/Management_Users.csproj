@@ -30,6 +30,9 @@
       <Compile Update="pages\DashboardHome.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="pages\DashboardHome.Designer.cs">
+        <DependentUpon>DashboardHome.cs</DependentUpon>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>

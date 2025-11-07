@@ -31,7 +31,7 @@ public partial class Login : Form
         {
             var dashbord = new DashboardHome(user);
             dashbord.Show();
-            this.Hide();
+            this.Close();
         }
     }
     
