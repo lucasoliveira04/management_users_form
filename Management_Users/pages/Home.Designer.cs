@@ -32,6 +32,7 @@ partial class Home
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
         panel1 = new System.Windows.Forms.Panel();
         button3 = new System.Windows.Forms.Button();
         button1 = new System.Windows.Forms.Button();
@@ -45,6 +46,7 @@ partial class Home
         imageList2 = new System.Windows.Forms.ImageList(components);
         openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
         textMainHome = new System.Windows.Forms.Label();
+        textchange = new System.Windows.Forms.Label();
         panel1.SuspendLayout();
         panel2.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -62,7 +64,6 @@ partial class Home
         panel1.Name = "panel1";
         panel1.Size = new System.Drawing.Size(832, 61);
         panel1.TabIndex = 0;
-        
         // 
         // button3
         // 
@@ -76,9 +77,9 @@ partial class Home
         // 
         // button1
         // 
-        button1.Location = new System.Drawing.Point(639, 14);
+        button1.Location = new System.Drawing.Point(623, 14);
         button1.Name = "button1";
-        button1.Size = new System.Drawing.Size(75, 28);
+        button1.Size = new System.Drawing.Size(91, 28);
         button1.TabIndex = 1;
         button1.Text = "Cadastro";
         button1.UseVisualStyleBackColor = true;
@@ -90,7 +91,7 @@ partial class Home
         titleHomeLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
         titleHomeLabel.Location = new System.Drawing.Point(-1, -1);
         titleHomeLabel.Name = "titleHomeLabel";
-        titleHomeLabel.Size = new System.Drawing.Size(216, 61);
+        titleHomeLabel.Size = new System.Drawing.Size(344, 61);
         titleHomeLabel.TabIndex = 1;
         titleHomeLabel.Text = "You ERP";
         // 
@@ -117,6 +118,7 @@ partial class Home
         // 
         // pictureBox2
         // 
+        pictureBox2.Image = ((System.Drawing.Image)resources.GetObject("pictureBox2.Image"));
         pictureBox2.Location = new System.Drawing.Point(624, 11);
         pictureBox2.Name = "pictureBox2";
         pictureBox2.Size = new System.Drawing.Size(26, 27);
@@ -127,6 +129,7 @@ partial class Home
         // 
         // pictureBox1
         // 
+        pictureBox1.Image = ((System.Drawing.Image)resources.GetObject("pictureBox1.Image"));
         pictureBox1.Location = new System.Drawing.Point(592, 11);
         pictureBox1.Name = "pictureBox1";
         pictureBox1.Size = new System.Drawing.Size(26, 27);
@@ -168,15 +171,26 @@ partial class Home
         textMainHome.Size = new System.Drawing.Size(517, 197);
         textMainHome.TabIndex = 3;
         // 
+        // textchange
+        // 
+        textchange.Font = new System.Drawing.Font("Segoe UI", 34.2F, ((System.Drawing.FontStyle)(System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)), System.Drawing.GraphicsUnit.Point, ((byte)0));
+        textchange.Location = new System.Drawing.Point(30, 94);
+        textchange.Name = "textchange";
+        textchange.Size = new System.Drawing.Size(686, 218);
+        textchange.TabIndex = 4;
+        textchange.Text = "Bem vindo";
+        // 
         // Home
         // 
-        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+        AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(834, 438);
+        Controls.Add(textchange);
         Controls.Add(textMainHome);
         Controls.Add(panel2);
         Controls.Add(button2);
         Controls.Add(panel1);
+        Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
         Text = "Home";
         panel1.ResumeLayout(false);
         panel2.ResumeLayout(false);
@@ -184,6 +198,8 @@ partial class Home
         ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Label textchange;
 
     private System.Windows.Forms.Label textMainHome;
 

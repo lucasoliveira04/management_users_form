@@ -18,6 +18,18 @@
       <Compile Update="pages\Login.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="pages\Home.Designer.cs">
+        <DependentUpon>Home.cs</DependentUpon>
+      </Compile>
+      <Compile Update="pages\Login.Designer.cs">
+        <DependentUpon>Login.cs</DependentUpon>
+      </Compile>
+      <Compile Update="pages\Register.Designer.cs">
+        <DependentUpon>Register.cs</DependentUpon>
+      </Compile>
+      <Compile Update="pages\DashboardHome.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>
@@ -28,6 +40,12 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="pages\Login.resx">
+        <DependentUpon>Login.cs</DependentUpon>
+      </EmbeddedResource>
     </ItemGroup>
 
 </Project>

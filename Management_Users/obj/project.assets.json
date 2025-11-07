@@ -3140,19 +3140,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LucasOliveira\\.nuget\\packages\\": {}
+    "C:\\Users\\Lucas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LucasOliveira\\Documents\\Github\\management_users_form\\Management_Users\\Management_Users.csproj",
+      "projectUniqueName": "C:\\Users\\Lucas\\Documents\\Github\\management_users_form\\Management_Users\\Management_Users.csproj",
       "projectName": "Management_Users",
-      "projectPath": "C:\\Users\\LucasOliveira\\Documents\\Github\\management_users_form\\Management_Users\\Management_Users.csproj",
-      "packagesPath": "C:\\Users\\LucasOliveira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LucasOliveira\\Documents\\Github\\management_users_form\\Management_Users\\obj\\",
+      "projectPath": "C:\\Users\\Lucas\\Documents\\Github\\management_users_form\\Management_Users\\Management_Users.csproj",
+      "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lucas\\Documents\\Github\\management_users_form\\Management_Users\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LucasOliveira\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0-windows"
@@ -3174,9 +3174,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0-windows7.0": {
@@ -3220,7 +3220,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\LucasOliveira\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -43,7 +43,12 @@ namespace Management_Users.pages
             user.Password = senha;
             user.Email = email;
             
-            _userRepository.Add(user);
+            var registerUser = _userRepository.Add(user);
+            if (registerUser)
+            {
+                MessageBox.Show("Conta criada com sucesso");
+                return;
+            } 
         }
     }
 }

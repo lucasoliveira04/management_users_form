@@ -1,4 +1,5 @@
 using System;
+using Management_Users.database;
 using Management_Users.pages;
 using Management_Users.repositories;
 
@@ -9,6 +10,10 @@ namespace Management_Users
         [STAThread]
         static void Main()
         {
+            using (var context = new AppDbContext())
+            {
+                context.Database.EnsureCreated();
+            }
             ApplicationConfiguration.Initialize();
 
             var userRepository = new UserRepository();

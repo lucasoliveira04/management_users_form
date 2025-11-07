@@ -14,10 +14,16 @@ namespace Management_Users.repositories
             var user = _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
             return user != null;
         }
-        public void Add(UserEntity user)
+
+        public UserEntity? Authenticate(string email, string password)
+        {
+            return _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+        }
+        public bool Add(UserEntity user)
         {
             _context.Users.Add(user);
             _context.SaveChanges();
+            return true;
         }
 
         public UserEntity? GetByEmail(string email)

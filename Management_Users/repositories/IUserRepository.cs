@@ -5,7 +5,7 @@ namespace Management_Users.repositories
 {
     public interface IUserRepository
     {
-        void Add(UserEntity user);
+        bool Add(UserEntity user);
         UserEntity? GetByEmail(string email);
         UserEntity? GetByPassword(string password);
         IEnumerable<UserEntity> GetAll();

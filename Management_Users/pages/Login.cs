@@ -4,7 +4,7 @@ namespace Management_Users.pages;
 
 public partial class Login : Form
 {
-    private readonly UserRepository _userRepository = new UserRepository();
+    private readonly UserRepository _userRepository = new();
     public Login()
     {
         InitializeComponent();
@@ -20,15 +20,18 @@ public partial class Login : Form
             MessageBox.Show("Por favor, preencha todos os campos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return;
         }
+        
+        var user = _userRepository.Authenticate(email, senha);
 
-        if (!_userRepository.IsAuthenticated(email, senha))
+        if (user == null)
         {
             MessageBox.Show("E-mail ou senha incorretos. Por favor, tente novamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         else
         {
-            MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Application.Exit();
+            var dashbord = new DashboardHome(user);
+            dashbord.Show();
+            this.Hide();
         }
     }
     
