@@ -28,7 +28,13 @@ public partial class Login : Form
         else
         {
             MessageBox.Show("Login realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Close();
+            Application.Exit();
         }
+    }
+    
+    private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+    {
+        var registerForm = new Register();
+        registerForm.Show();
     }
 }

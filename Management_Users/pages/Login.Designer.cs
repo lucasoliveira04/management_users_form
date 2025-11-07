@@ -101,6 +101,7 @@ partial class Login
         linkLabel1.TabStop = true;
         linkLabel1.Text = "Criar Conta";
         linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        linkLabel1.LinkClicked += linkLabel1_LinkClicked;
         // 
         // Login
         // 

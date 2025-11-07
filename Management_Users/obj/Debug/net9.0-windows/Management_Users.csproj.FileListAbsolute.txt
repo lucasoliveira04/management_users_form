@@ -33,7 +33,6 @@ C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\b
 C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\bin\Debug\net9.0-windows\Management_Users.runtimeconfig.json
 C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\bin\Debug\net9.0-windows\Management_Users.dll
 C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\bin\Debug\net9.0-windows\Management_Users.pdb
-C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\obj\Debug\net9.0-windows\Management_Users.pages.Home.resources
 C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\obj\Debug\net9.0-windows\Management_Users.csproj.GenerateResource.cache
 C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\obj\Debug\net9.0-windows\Management_Users.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\LucasOliveira\Documents\Github\management_users_form\Management_Users\obj\Debug\net9.0-windows\Management_Users.AssemblyInfoInputs.cache
