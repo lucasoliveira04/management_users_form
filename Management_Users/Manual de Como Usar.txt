@@ -1,0 +1,10 @@
+﻿Já existe um usuário root que você pode passar no Login 
+
+Email = root 
+senha = root 
+
+Você também pode criar seu usuário na pagina de registro.
+Na tela do usuário logado você pode remover e adicionar usuários. 
+Estou mockando os dados na tabela de forma manual e randomizando as informações que aparecem na tabela.
+O banco que esta sendo usado é o SQLite, ele está sendo usado apenas para autenticação, então é apenas guardado informações 
+de login e não informações dos usuarios que aparecem na tabela.
